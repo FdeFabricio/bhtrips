@@ -1,3 +1,4 @@
 node_modules/
 .idea/
 gtfs_processing/*.pyc
+gtfs_processing/gtfs/*.txt

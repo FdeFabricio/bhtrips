@@ -16,9 +16,6 @@ for index, row in df_stop_times.iterrows():
         trips[row["trip_id"]] = utils.Trip(row["trip_id"], row["arrival_time"], row["stop_id"])
     else:
         trips[row["trip_id"]].add_stop(row["stop_id"], row["arrival_time"])
-    
-    if index <= 500:
-        break
 
 output_data = {WEEKDAY: [], SATURDAY: [], SUNDAY: []}
 for trip_id, trip in trips.items():

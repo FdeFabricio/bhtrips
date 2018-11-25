@@ -34,3 +34,6 @@ const CONFIG = {
         new webpack.EnvironmentPlugin(["MapboxAccessToken"]),
     ],
 };
+
+module.exports = env =>
+    env ? require("../../webpack.config.local")(CONFIG)(env) : CONFIG;

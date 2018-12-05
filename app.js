@@ -10,7 +10,7 @@ const DATA_URL = "data/trips_weekday.json";
 export const INITIAL_VIEW_STATE = {
     longitude: -43.9594,
     latitude: -19.9175,
-    zoom: 11,
+    zoom: 10.5,
     maxZoom: 16,
 };
 
@@ -99,13 +99,14 @@ class Timer extends React.Component {
             <h1
                 style={{
                     position: "absolute",
-                    bottom: 100,
-                    left: 100,
+                    bottom: 10,
+                    right: "50%",
                     color: "#EFE9AC",
                     backgroundColor: "#FF4130",
-                    padding: 20,
-                    width: 100,
+                    padding: 10,
+                    width: 70,
                     textAlign: "center",
+                    fontSize: 20,
                 }}
             >
                 {Math.floor(this.props.time / 60).toLocaleString("en-US", {
